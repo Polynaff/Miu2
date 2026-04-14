@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <ul class="menu">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Каталог</a></li>
+    </ul>
+    <hr>
+    <h1 class="catalog-title">Каталог</h1>
+
+  
+    <div class="filter-wrap">
+        <label for="filter">Фильтр по категории:</label>
+        <select id="filter">
+            <option value="all">Все</option>
+            <option value="tufli">Туфли</option>
+            <option value="stripy">Стрипы</option>
+        </select>
+    </div>
+
+  
+    <div class="catalog-grid">
+
+        <div class="card" data-price="3500" data-category="tufli">
+            <a href="tufli_rozovye.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/tufli_rozovye.jpeg" alt="Туфли розовые блестящие">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Туфли блестящие розовые</p>
+                    <p class="card-price">3 500 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+           
+            <button class="add-to-cart-btn" data-name="Туфли блестящие розовые" data-price="3500">Добавить в корзину</button>
+        </div>
+
+        <div class="card" data-price="4200" data-category="tufli">
+            <a href="tufli_chern.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/tufli_chernye.jpeg" alt="Туфли чёрные">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Туфли классические чёрные</p>
+                    <p class="card-price">4 200 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+            <button class="add-to-cart-btn" data-name="Туфли классические чёрные" data-price="4200">Добавить в корзину</button>
+        </div>
+
+        <div class="card" data-price="2800" data-category="stripy">
+            <a href="stripy_chernye.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/stripy_chernye.jpg" alt="Стрипы чёрные двойки">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Стрипы чёрные двойки</p>
+                    <p class="card-price">2 800 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+            <button class="add-to-cart-btn" data-name="Стрипы чёрные двойки" data-price="2800">Добавить в корзину</button>
+        </div>
+
+        <div class="card" data-price="3100" data-category="stripy">
+            <a href="stripy_belye.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/stripy_belye.jpg" alt="Стрипы белые тройки">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Стрипы белые тройки</p>
+                    <p class="card-price">3 100 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+            <button class="add-to-cart-btn" data-name="Стрипы белые тройки" data-price="3100">Добавить в корзину</button>
+        </div>
+
+        <div class="card" data-price="2900" data-category="stripy">
+            <a href="stripy_sinie.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/stripy_sinie.jpg" alt="Стрипы синие тройки">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Стрипы синие тройки</p>
+                    <p class="card-price">2 900 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+            <button class="add-to-cart-btn" data-name="Стрипы синие тройки" data-price="2900">Добавить в корзину</button>
+        </div>
+
+        <div class="card" data-price="3300" data-category="stripy">
+            <a href="stripy_edinicy.html" class="card-link">
+                <div class="card-img-wrap">
+                    <img src="img/stripy_edinicy.jpg" alt="Стрипы единицы High Heels">
+                </div>
+                <div class="card-body">
+                    <p class="card-name">Стрипы единицы High Heels</p>
+                    <p class="card-price">3 300 руб.</p>
+                    <span class="card-btn">Подробнее</span>
+                </div>
+            </a>
+            <button class="add-to-cart-btn" data-name="Стрипы единицы High Heels" data-price="3300">Добавить в корзину</button>
+        </div>
+
+    </div>
+
+   
+    <div class="cart-section">
+        <h2>Корзина</h2>
+      
+        <ul id="cart-list"></ul>
+      
+        <p id="cart-total">Итого: 0 руб.</p>
+       
+        <button id="pay-btn" class="cart-action-btn">Оплатить</button>
+        <button id="clear-btn" class="cart-action-btn cart-clear-btn">Очистить корзину</button>
+    </div>
+
+    <footer>
+        <p>&copy; Все права защищены</p>
+    </footer>
+
+   
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,309 @@
+
+body {
+    background-color: rgb(14, 8, 22);
+    color: rgb(220, 210, 235);
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    margin: 0;
+    padding: 30px 50px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid rgb(80, 40, 110);
+    margin: 12px 0 30px 0;
+}
+
+ul.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 10px 0;
+}
+
+ul.menu li {
+    display: inline;
+    margin-right: 30px;
+}
+
+ul.menu li a {
+    color: rgb(190, 150, 230);
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+ul.menu li a:hover {
+    color: rgb(240, 220, 255);
+}
+
+h1, h2, h3 {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    background-color: rgb(130, 70, 185);
+    padding: 8px 14px;
+    border-radius: 3px;
+    letter-spacing: 1px;
+}
+
+h1.catalog-title {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 38px;
+    font-weight: 300;
+    font-style: italic;
+    letter-spacing: 4px;
+    color: rgb(230, 215, 255);
+    background: none;
+    padding: 0 0 16px 0;
+    margin: 0 0 40px 0;
+    border-bottom: 1px solid rgb(100, 55, 150);
+    border-radius: 0;
+}
+.catalog-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 28px;
+}
+
+.card {
+    background-color: rgb(22, 12, 36);
+    border: 1px solid rgb(70, 35, 100);
+    width: 260px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.card:hover {
+    border-color: rgb(160, 100, 220);
+    transform: translateY(-4px);
+}
+
+.card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.card-img-wrap {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    background-color: rgb(18, 10, 28);
+}
+
+.card-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.card:hover .card-img-wrap img {
+    transform: scale(1.04);
+}
+
+.card-body {
+    padding: 16px 18px 20px;
+    border-top: 1px solid rgb(70, 35, 100);
+}
+
+.card-name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: rgb(225, 210, 248);
+    margin: 0 0 14px 0;
+    letter-spacing: 0.5px;
+    line-height: 22px;
+}
+
+.card-btn {
+    display: inline-block;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    color: rgb(175, 125, 225);
+    border-bottom: 1px solid rgb(130, 80, 180);
+    padding-bottom: 2px;
+    transition: color 0.2s, border-color 0.2s;
+}
+
+.card:hover .card-btn {
+    color: rgb(230, 200, 255);
+    border-color: rgb(200, 150, 255);
+}
+p.short-desc {
+    color: rgb(200, 170, 240);
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+
+p.full-desc {
+    color: rgb(215, 200, 235);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+ul.specs {
+    list-style: none;
+    padding-left: 10px;
+}
+
+ul.specs li {
+    color: rgb(190, 160, 230);
+    font-size: 15px;
+    padding: 4px 0 4px 28px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='4' fill='rgb(140,80,195)'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 14px 14px;
+}
+
+
+a {
+    color: rgb(180, 130, 220);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(230, 200, 255);
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: 1px solid rgb(60, 30, 90);
+    padding-top: 14px;
+    color: rgb(110, 80, 140);
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+/* --- Стили для фильтра --- */
+.filter-wrap {
+    margin-bottom: 24px;
+}
+
+.filter-wrap label {
+    font-size: 14px;
+    margin-right: 10px;
+    color: rgb(200, 170, 240);
+}
+
+.filter-wrap select {
+    background-color: rgb(22, 12, 36);
+    color: rgb(220, 210, 235);
+    border: 1px solid rgb(70, 35, 100);
+    padding: 6px 12px;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+
+.card-price {
+    color: rgb(200, 150, 255);
+    font-size: 15px;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+
+.add-to-cart-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: rgb(130, 70, 185);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.add-to-cart-btn:hover {
+    background-color: rgb(160, 100, 220);
+}
+
+
+.cart-section {
+    margin-top: 40px;
+    padding: 20px;
+    border: 1px solid rgb(70, 35, 100);
+    background-color: rgb(22, 12, 36);
+}
+
+#cart-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 16px 0;
+}
+
+#cart-list li {
+    padding: 8px 0;
+    border-bottom: 1px solid rgb(50, 25, 75);
+    font-size: 14px;
+    color: rgb(210, 190, 240);
+}
+
+#cart-total {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgb(210, 180, 255);
+    margin: 16px 0;
+}
+
+
+.cart-action-btn {
+    padding: 10px 24px;
+    background-color: rgb(130, 70, 185);
+    color: rgb(255, 255, 255);
+    border: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s;
+}
+
+.cart-action-btn:hover {
+    background-color: rgb(160, 100, 220);
+}
+
+.cart-clear-btn {
+    background-color: rgb(50, 25, 75);
+}
+
+.cart-clear-btn:hover {
+    background-color: rgb(80, 40, 120);
+}
+
+
+.remove-btn {
+    margin-left: 10px;
+    padding: 3px 10px;
+    background-color: rgb(50, 25, 75);
+    color: rgb(200, 170, 240);
+    border: none;
+    font-size: 11px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.remove-btn:hover {
+    background-color: rgb(100, 50, 150);
+}
