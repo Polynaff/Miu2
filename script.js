@@ -7,6 +7,7 @@ if (savedCart) {
     cart = JSON.parse(savedCart);
 }
 
+
 const addButtons = document.querySelectorAll(".add-to-cart-btn");
 
 // список корзины (ul)
@@ -25,7 +26,6 @@ const filterSelect = document.querySelector("#filter");
 
 // все карточки товаров
 const productCards = document.querySelectorAll(".card");
-
 const saveCartToStorage = () => {
     localStorage.setItem("cart", JSON.stringify(cart));
 };
